@@ -1,3 +1,4 @@
+const { reload } = require('browser-sync');
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 //Для правильного просмотра стилей
@@ -16,22 +17,29 @@ function css_stye(done) {
     done();
 }
 
-//Указываю папку в которой будет обновление
+//Работа с обновлением
 function sync(done) {
     browserSync.init({
         server: {
             baseDir: './'
-        }
+        },
+        notify: false
     });
+    done();
+}
+
+//Обновляю всё
+function reloadAll(done) {
+    browserSync.reload();
     done();
 }
 
 //Обновляю страницу при любом изменении документа
 function watchAll() {
     gulp.watch('./scss/**/*', css_stye);
-    gulp.watch('./**/*.html', browserSync.reload());
-    gulp.watch('./**/*.js', browserSync.reload());
+    gulp.watch('./**/*.html', reloadAll);
+    gulp.watch('./**/*.js', reloadAll);
 }
 
-//Тут я задачу на просмотр и обновление параллелю
+//Тут я делаю задачу на просмотр и обновление параллелю
 gulp.task('default', gulp.parallel(sync, watchAll))
