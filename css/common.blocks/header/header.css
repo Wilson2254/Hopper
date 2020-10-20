@@ -11,9 +11,14 @@
   font-size: 14px;
   line-height: 16px; }
 
+.header__line--orange {
+  color: #F19932;
+  margin-left: -20px;
+  margin-right: 7px;
+  font-weight: 700; }
+
 .header {
-  margin-top: 80px;
-  margin-left: 100px;
+  margin: 80px 100px 32px 100px;
   font-family: 'Ubuntu', sans-serif; }
 
 /*# sourceMappingURL=header.css.map */
