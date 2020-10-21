@@ -9,7 +9,8 @@
   font-style: italic;
   font-weight: normal;
   font-size: 14px;
-  line-height: 16px; }
+  line-height: 16px;
+  width: 1228px; }
 
 .header__line--orange {
   color: #F19932;
@@ -19,6 +20,7 @@
 
 .header {
   margin: 80px 100px 32px 100px;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Ubuntu', sans-serif;
+  width: 1440px; }
 
 /*# sourceMappingURL=header.css.map */
