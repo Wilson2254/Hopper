@@ -1,0 +1,1 @@
+{"version":3,"file":"work-group.css","sources":["common.blocks/main/work-group/work-group.scss"],"sourcesContent":[".work-group {\r\n    width: 1240px;\r\n    height: 122px;\r\n    background: #F8F7FA;\r\n    border-radius: 2px;\r\n}"],"names":[],"mappings":"AAAA,AAAA,WAAW,CAAC;EACR,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,KAAK;EACb,UAAU,EAAE,OAAO;EACnB,aAAa,EAAE,GAAG,GACrB"}

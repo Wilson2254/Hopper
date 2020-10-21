@@ -42,6 +42,12 @@
   display: flex;
   flex-wrap: wrap; }
 
+.work-group {
+  width: 1240px;
+  height: 122px;
+  background: #F8F7FA;
+  border-radius: 2px; }
+
 .main {
   margin: 0 100px 130px 100px;
   font-family: 'Ubuntu', sans-serif;
