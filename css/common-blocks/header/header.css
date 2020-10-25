@@ -1,0 +1,26 @@
+.header__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #000000;
+  margin-bottom: 20px; }
+
+.header__description {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  width: 1228px; }
+
+.header__line--orange {
+  color: #F19932;
+  margin-left: -20px;
+  margin-right: 7px;
+  font-weight: 700; }
+
+.header {
+  margin: 80px 100px 32px 100px;
+  font-family: 'Ubuntu', sans-serif;
+  width: 1440px; }
+
+/*# sourceMappingURL=header.css.map */
