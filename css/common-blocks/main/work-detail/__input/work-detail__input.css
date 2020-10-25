@@ -13,5 +13,7 @@
   border-bottom-right-radius: 2px;
   border-bottom-left-radius: 2px;
   resize: none; }
+  .work-detail__input:focus {
+    background-color: #c7c7c7; }
 
 /*# sourceMappingURL=work-detail__input.css.map */
