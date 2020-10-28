@@ -1,0 +1,26 @@
+.buttons__cancel {
+  margin-left: 20px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  width: 92px;
+  height: 45px;
+  background: #E9E9E9;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none; }
+  .buttons__cancel:hover {
+    cursor: pointer;
+    background: #DBDBDB; }
+  .buttons__cancel:focus {
+    border: 2px solid #DBDBDB;
+    background: #E9E9E9; }
+  .buttons__cancel:active {
+    background: #C4C4C4; }
+
+/*# sourceMappingURL=buttons__cancel.css.map */

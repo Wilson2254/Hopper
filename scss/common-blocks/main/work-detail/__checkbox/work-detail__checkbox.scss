@@ -1,5 +1,10 @@
 .work-detail__checkbox {
     display: flex;
     align-items: center;
-    margin-left: -4px;
+    cursor: pointer;
+    &:hover {
+        background: rgba(47, 128, 237, 0.05);
+        width: 370px;
+        margin-left: 0;
+    }
 }

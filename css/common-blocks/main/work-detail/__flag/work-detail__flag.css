@@ -1,6 +1,7 @@
 .work-detail__flag {
   width: 18px;
   height: 18px;
-  background: #3C8AFB; }
+  background: #3C8AFB;
+  cursor: pointer; }
 
 /*# sourceMappingURL=work-detail__flag.css.map */

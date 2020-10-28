@@ -1,61 +1,3 @@
-.work-detail__flag {
-  width: 18px;
-  height: 18px;
-  background: #3C8AFB;
-  cursor: pointer; }
-
-.work-detail__promt {
-  margin-top: 20px;
-  background: #F8F7FA;
-  border-top-right-radius: 2px;
-  border-top-left-radius: 2px;
-  width: 1228px;
-  padding-top: 8px;
-  padding-bottom: 4px;
-  padding-left: 12px;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 11px;
-  line-height: 13px;
-  color: #000000; }
-
-.work-detail__input {
-  width: 1226px;
-  height: 89px;
-  font-family: Ubuntu;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
-  background: #F8F7FA;
-  border: 0;
-  outline: none;
-  padding-left: 12px;
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  resize: none; }
-  .work-detail__input:focus {
-    background-color: #c7c7c7; }
-
-.work-detail__checkbox {
-  display: flex;
-  align-items: center;
-  cursor: pointer; }
-  .work-detail__checkbox:hover {
-    background: rgba(47, 128, 237, 0.05);
-    width: 370px;
-    margin-left: 0; }
-
-.work-detail__label {
-  margin-left: 8px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  /* identical to box height */
-  /* dark */
-  color: #182C40; }
-
 .buttons__cancel {
   margin-left: 20px;
   font-family: Ubuntu;
@@ -133,7 +75,4 @@
   margin-top: 32px;
   display: flex; }
 
-.work-detail {
-  margin-top: 20px; }
-
-/*# sourceMappingURL=work-detail.css.map */
+/*# sourceMappingURL=buttons.css.map */
