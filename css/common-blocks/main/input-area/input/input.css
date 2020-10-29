@@ -23,6 +23,25 @@
   padding-left: 8px;
   margin-left: 4px; }
 
+.input--error {
+  border: solid 2px #F5BCBC; }
+
+.input__error-promt {
+  display: none;
+  margin-top: 5px;
+  margin-left: -2px;
+  padding-left: 12px;
+  background-color: #F5BCBC;
+  color: #800404;
+  border: solid 2px #F5BCBC;
+  width: 388px;
+  border-radius: 2px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px; }
+
 .input {
   padding-top: 8px;
   width: 400px;

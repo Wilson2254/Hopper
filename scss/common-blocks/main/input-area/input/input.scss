@@ -1,5 +1,7 @@
 @import "__promt/input__promt.scss";
 @import "__field/input__field.scss";
+@import "--error/input--error.scss";
+@import "__error-promt/input__error-promt.scss";
 .input {
     padding-top: 8px;
     width: 400px;
