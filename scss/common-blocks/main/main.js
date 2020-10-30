@@ -1,2 +1,2 @@
-import { func } from './input-area/input/input.js';
-func();
+import { inputValidStorage } from './input-area/input/input.js';
+inputValidStorage();
