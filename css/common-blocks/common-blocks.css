@@ -264,9 +264,49 @@
 .work-detail {
   margin-top: 20px; }
 
+.alert__title {
+  width: 69px;
+  height: 15px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  margin-left: 100px;
+  padding-top: 20px;
+  margin-bottom: 12px;
+  color: #333333; }
+
+.alert__description {
+  width: 314px;
+  height: 23px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 11px;
+  margin-left: 100px;
+  color: #333333; }
+
+.alert__img {
+  background-image: url("./src/Vector.png"); }
+
+.alert {
+  width: 473px;
+  height: 90px;
+  background: rgba(251, 217, 44, 0.16);
+  border-radius: 0px 4px 4px 0px;
+  margin-left: -100px;
+  margin-bottom: 20px;
+  display: flex; }
+
 .main {
   margin: 0 100px 130px 100px;
   font-family: 'Ubuntu', sans-serif;
   width: 1440px; }
+
+body {
+  margin: 0;
+  padding: 0; }
 
 /*# sourceMappingURL=common-blocks.css.map */

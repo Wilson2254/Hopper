@@ -1,0 +1,11 @@
+@import "__info/alert__info.scss";
+@import "__img/alert__img.scss";
+.alert {
+    width: 473px;
+    height: 90px;
+    background: rgba(251, 217, 44, 0.16);
+    border-radius: 0px 4px 4px 0px;
+    margin-left: -100px;
+    margin-bottom: 20px;
+    display: flex;
+}

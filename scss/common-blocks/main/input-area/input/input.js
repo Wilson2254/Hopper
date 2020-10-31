@@ -2,9 +2,9 @@ import { errorPopup } from './input-error-popup.js';
 import { correctPopup } from './input-correct-popup.js';
 
 export function inputValidStorage() {
-    const elements1 = document.querySelectorAll('.input__field');
+    const inputFileds = document.querySelectorAll('.input__field');
 
-    elements1.forEach((val, i) => {
+    inputFileds.forEach((val, i) => {
         if (localStorage.getItem(i))
             val.value = localStorage.getItem(i).trim()
 

@@ -1,0 +1,1 @@
+{"version":3,"file":"alert__img.css","sources":["common-blocks/main/alert/__img/alert__img.scss"],"sourcesContent":[".alert__img {\r\n    background-image: url('./src/Vector.png');\r\n}"],"names":[],"mappings":"AAAA,AAAA,WAAW,CAAC;EACR,gBAAgB,EAAE,uBAAuB,GAC5C"}
