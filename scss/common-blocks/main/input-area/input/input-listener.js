@@ -38,7 +38,7 @@ export function inputListener(i, event) {
             //Проверка почты по регулярке
         case 2:
             {
-                var st = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{1,}))$/);
+                var st = new RegExp(/^(([^<>()\[\]\\.,;:\s@']+(\.[^<>()\[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{1,}))$/);
                 if (!st.test(event.target.value) || event.target.value == '') {
                     errorPopup(i)
                     count[i] = false;
@@ -54,17 +54,17 @@ export function inputListener(i, event) {
         case 3:
             {
                 let x = event.target.value
-                    .replace(/\D/g, "") //Удаляю все кроме цифр
+                    .replace(/\D/g, '') //Удаляю все кроме цифр
                     .match(/(\d{0,1})(\d{0,3})(\d{0,3})(\d{0,2})(\d{0,2})/); //Маска
                 if (x[1] !== 7) x[1] = '+7'; //Первый символ всегда будет +7
                 //Вывожу массив в правильной последовательностью
                 event.target.value = !x[2] ?
                 x[1] : x[1] +
-                    " (" +
+                    ' (' +
                     x[2] +
-                    (x[3] ? ") " + x[3] : "") +
-                    (x[4] ? "-" + x[4] : "") +
-                    (x[5] ? "-" + x[5] : "");
+                    (x[3] ? ') ' + x[3] : '') +
+                    (x[4] ? '-' + x[4] : '') +
+                    (x[5] ? '-' + x[5] : '');
                 localStorage.setItem(i, event.target.value);
                 if (event.target.value.length != 18) {
                     errorPopup(i)

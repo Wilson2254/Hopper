@@ -1,6 +1,8 @@
-@import "__title/header__title.scss";
-@import "__description/header__description.scss";
-@import "__line/header__line.scss";
+@import '--size--m/header--size--m.scss';
+@import '--size--s/header--size--s.scss';
+@import '__title/header__title.scss';
+@import '__description/header__description.scss';
+@import '__line/header__line.scss';
 .header {
     margin: 80px 100px 32px 100px;
     font-family: 'Ubuntu', sans-serif;
