@@ -247,7 +247,6 @@
   font-size: 13px;
   line-height: 15px;
   margin-left: 100px;
-  padding-top: 20px;
   margin-bottom: 12px;
   color: #333333; }
 
@@ -263,7 +262,10 @@
   color: #333333; }
 
 .alert__img {
-  background-image: url("./src/Vector.png"); }
+  width: 19.06px;
+  height: 17.01px;
+  margin-left: 20px;
+  background-image: url("/src/Vector.png"); }
 
 .alert {
   width: 473px;
@@ -272,7 +274,19 @@
   border-radius: 0px 4px 4px 0px;
   margin-left: -100px;
   margin-bottom: 20px;
-  display: flex; }
+  display: none;
+  align-items: center;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown; }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0px, 0px); }
+  100% {
+    opacity: 1;
+    transform: none; } }
 
 .main {
   margin: 0 100px 130px 100px;
