@@ -1,3 +1,4 @@
+//То же самый inputListener, но только проверяю при клике на поле
 import { errorPopup } from './input-error-popup.js';
 import { correctPopup } from './input-correct-popup.js';
 export function clickListener(i, event) {

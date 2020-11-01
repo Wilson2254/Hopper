@@ -1,0 +1,54 @@
+.alert__title {
+  width: 69px;
+  height: 15px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  margin-left: 100px;
+  margin-bottom: 12px;
+  color: #333333; }
+
+.alert__description {
+  width: 314px;
+  height: 23px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 11px;
+  margin-left: 100px;
+  color: #333333; }
+
+.alert__img {
+  width: 19.06px;
+  height: 17.01px;
+  margin-left: 20px;
+  background-image: url("/src/Vector.png"); }
+
+.alert--done {
+  background-color: green; }
+
+.alert {
+  width: 473px;
+  height: 90px;
+  background: rgba(251, 217, 44, 0.16);
+  border-radius: 0px 4px 4px 0px;
+  margin-left: -100px;
+  margin-bottom: 20px;
+  display: none;
+  align-items: center;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown; }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(-100%, 0px, 0px); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+
+/*# sourceMappingURL=alert.css.map */

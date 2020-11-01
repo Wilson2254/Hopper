@@ -1,3 +1,4 @@
+//Подсвечиваю красным, если поле не ок
 export function errorPopup(i) {
     document.querySelectorAll('.input')[i].classList.add('input--error')
     document.querySelectorAll('.input')[i].classList.remove('input--correct')
