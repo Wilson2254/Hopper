@@ -1,13 +1,18 @@
 import { errorPopup } from './input-error-popup.js';
 import { correctPopup } from './input-correct-popup.js';
+
+export let count = new Array(inputFileds).fill(false);
+
 export function inputListener(i, event) {
     switch (i) {
 
         case 0:
             if (event.target.value.trim() == '') {
                 errorPopup(i)
+                count[i] = false;
             } else {
                 correctPopup(i)
+                count[i] = true;
             }
             localStorage.setItem(i, event.target.value);
             break
@@ -17,8 +22,10 @@ export function inputListener(i, event) {
                 var st = new RegExp(/[а-яё|\s]/i);
                 if (st.test(event.target.value) || event.target.value == '') {
                     errorPopup(i)
+                    count[i] = false;
                 } else {
                     correctPopup(i)
+                    count[i] = true;
                 }
                 localStorage.setItem(i, event.target.value);
                 break
@@ -29,8 +36,10 @@ export function inputListener(i, event) {
                 var st = new RegExp(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{1,}))$/);
                 if (!st.test(event.target.value) || event.target.value == '') {
                     errorPopup(i)
+                    count[i] = false;
                 } else {
                     correctPopup(i)
+                    count[i] = true;
                 }
                 localStorage.setItem(i, event.target.value);
                 break
@@ -53,8 +62,10 @@ export function inputListener(i, event) {
                 localStorage.setItem(i, event.target.value);
                 if (event.target.value.length != 18) {
                     errorPopup(i)
+                    count[i] = false;
                 } else {
                     correctPopup(i)
+                    count[i] = true;
                 }
                 break;
             }
@@ -62,8 +73,10 @@ export function inputListener(i, event) {
         case 4:
             if (event.target.value.trim() == '') {
                 errorPopup(i)
+                count[i] = false;
             } else {
                 correctPopup(i)
+                count[i] = true;
             }
             localStorage.setItem(i, event.target.value);
             break
@@ -71,8 +84,10 @@ export function inputListener(i, event) {
         case 5:
             if (event.target.value.trim() == '') {
                 errorPopup(i)
+                count[i] = false;
             } else {
                 correctPopup(i)
+                count[i] = true;
             }
             localStorage.setItem(i, event.target.value);
             break
@@ -80,5 +95,5 @@ export function inputListener(i, event) {
         default:
             break
     }
-
+    return count
 }

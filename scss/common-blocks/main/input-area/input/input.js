@@ -3,6 +3,8 @@ import { clickListener } from './click-listener.js'
 
 export function inputValidStorage() {
 
+    let conf;
+
     const inputFileds = document.querySelectorAll('.input__field');
 
     inputFileds.forEach((val, i) => {
@@ -11,11 +13,15 @@ export function inputValidStorage() {
             val.value = localStorage.getItem(i).trim()
 
         val.addEventListener('input', event => {
-            inputListener(i, event);
+            conf = inputListener(i, event);
+            if (conf.includes(false)) {
+                document.querySelector('.buttons__send').classList.add('buttons--disabled')
+            } else document.querySelector('.buttons__send').classList.remove('buttons--disabled')
         })
 
         val.addEventListener('click', event => {
             clickListener(i, event);
         })
     })
+
 };

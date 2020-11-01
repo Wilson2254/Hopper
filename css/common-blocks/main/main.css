@@ -231,6 +231,10 @@
   .buttons__send:active {
     background: #236ACB; }
 
+.buttons--disabled {
+  pointer-events: none;
+  opacity: 0.4; }
+
 .buttons {
   margin-top: 32px;
   display: flex; }

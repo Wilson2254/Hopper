@@ -1,0 +1,1 @@
+{"version":3,"file":"buttons--disabled.css","sources":["common-blocks/main/work-detail/buttons/--disabled/buttons--disabled.scss"],"sourcesContent":[".buttons--disabled {\r\n    pointer-events: none;\r\n    opacity: 0.4;\r\n}"],"names":[],"mappings":"AAAA,AAAA,kBAAkB,CAAC;EACf,cAAc,EAAE,IAAI;EACpB,OAAO,EAAE,GAAG,GACf"}

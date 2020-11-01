@@ -1,0 +1,1 @@
+{"version":3,"file":"buttoons__save--disabled.css","sources":["common-blocks/main/work-detail/buttons/__save/--disabled/buttoons__save--disabled.scss"],"sourcesContent":[".buttons__save--disabled {\r\n    pointer-events: none;\r\n    opacity: 0.4;\r\n}"],"names":[],"mappings":"AAAA,AAAA,wBAAwB,CAAC;EACrB,cAAc,EAAE,IAAI;EACpB,OAAO,EAAE,GAAG,GACf"}
