@@ -1,6 +1,7 @@
 const { reload } = require('browser-sync');
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const ghPages = require('gulp-gh-pages');
 //Для правильного просмотра стилей
 const sourcemaps = require('gulp-sourcemaps');
 //Плагин для автоматиеского обновления контента
